@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Formularios</h1>
+   <!--Se utiliza para crear un formulario en HTML que permite a los usuarios ingresar y enviar datos -->
+   <form action="Procesar Formulario" method="post">Formulario Consultorio Dental</form> 
+   <br>
+   <h3>Etiqueta Input</h3>
+   <!--Esta etiqueta de "input" se utiliza para crear campos de entrada en un formulario-->
+   <!--"type" define el tipo de entrada (texto, correo, contraseña, etc)-->
+   <!--"name" es el nombre del campo utilizado para identificar el dato cuando se envía nuestro formulario-->
+   <!--"placeholder" nos va a proporcionar un texto ejemplo dentro de nuestro campo de entrada-->
+   <input type="text" name="usuario" placeholder="Usuario">
+<br>
+<h3>Etiqueta Label</h3>
+<!--Se utiliza para etiquetar un elemento de entrada en un formulario, mejora la accesibilidad y la experiencia de usuario-->
+<label for="usuario">Usuario</label>
+<input type="text" id="usuario" name="usuario">
+<br>
+<h3>Etiqueta Button</h3>
+<!--Se utiliza para crear botones en un formulario-->
+<button type="submit">Enviar</button>
+<button type="reset">Restablecer</button>
+<!-- type: define el tipo de botón (submit, reset, button) -->
+<!-- name: es el nombre del botón, utilizado para identificar el botón cuando se envió el formulario -->
+<br>
+<h3>Etiqueta Área de Texto</h3>
+<!--Se utiliza para crear campos de texto en un formulario-->
+<textarea name="comentario" id="comentario" cols="50" rows="5">Escriba un Comentario</textarea>
+<br>
+<h3>Etiqueta select</h3>
+<!--Se utiliza para mostrarle al usuario un menú con opciones para seleccionar-->
+<select>
+    <option>----------------------</option>
+    <option>Opción1</option>
+    <option>Opción2</option>
+    <option>Opción3</option>
+</select>
+<br>
+<h1>Tipos de Entrada</h1>
+<!--Los tipos de entrada o inputs permiten a los usuarios ingresar diferentes tipos de datos en un formulario-->
+<h4>Enviar (submit)</h4>
+<!--Crea un botón que cuando hace click envía el formulario a una ubicación específica-->
+<form action="procesar formulario" method="post">
+    <input type="submit" value="enviar">
+</form>
+<br>
+<h4>Número (number)</h4>
+<!--Crear un campo de entradapara que el usuario ingrese números-->
+<input type="number" name="número">
+<br>
+<h4>Contraseña (password)</h4>
+<!--Crear un campo de entrada para que el usuario ingrese una contraseña-->
+<input type="password" name="contraseña">
+<br>
+<h4>Correo Electrónico (email)</h4>
+<!--Crear un campo para que el usuario ingrese un correo-->
+<input type="email" name="correo electrónico">
+<br>
+<h4>Fecha (date)</h4>
+<!--Crear un campo de entrada para que el usuario ingrese una fecha-->
+<input type="date" name="fecha">
+<br>
+<h4>Hora (time)</h4>
+<!--Crear un campo de entrada para que el usuario ingrese la hora-->
+<input type="time" name="hora">
+<br>
+<h4>Teléfono (tel)</h4>
+<!--Crear un campo de entrada para que el usuario ingrese su teléfono-->
+<input type="tel" name="teléfono">
+<br>
+<h4>Archivo (file)</h4>
+<!--Crear un campo de entrada que permite al usuario ingresar un archivo-->
+<input type="file" name="archivo">
+</body>
+</html>
+<!--Hay un atributo que permite establecer un mínimo y un máximo tanto para campos del tipo date y number. Tal cual se llama así "min y max", y podemos establecer límites en la fecha que se muestra (por ejemplo min="2003-08-28" max="1924-08-28). Si necesitan validar sólo el número de la edad (>18), si se puede hacer con validaciones de JS. Para delimitar una cantidad de caracteres para el input de tipo text o number, existe la propiedad maxlength. A veces es mejor tener un primer filtro desde HTML antes de entrar a validaciones de JS-->
